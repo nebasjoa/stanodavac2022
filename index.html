@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nebojsa</title>
+    <link rel="stylesheet" href="css.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <!-- Side navigation -->
+    <div class="sidebar" id="mySidebar">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div id="navbar">
+      <ul id="navbar-ul">
+        <li><button class="openbtn" v-on:click="openSidebar">Sidebar</button></li>
+        <li><a href="">Home</a></li>
+        <li><a>Profile</a></li>
+        <li><a>Pomoc</a></li>
+      </ul>
+    </div>
+    <div id="placeholder">
+      <section id="events">
+        <button v-on:click="add">Add</button>
+        <button v-on:click="remove">Remove</button>
+        <p id="result">Result: {{ counter }}</p>
+      </section>
+      <section id="events">
+        <h2>Zdravo, Nebojsa.</h2>
+        <p>Broj izdatih nekretnina: 6</p>
+        <p>Ukupna zaradjena suma: 1500000 dinara.</p>
+        <button>Profil</button>
+      </section>
+    </div>
+    <div id="placeholder">
+      <section id="mid-section">
+        <div id="header">Header.</div>
+        <div id="nekretnine">
+          <ul id="lista-nekretnina"></ul>
+        </div>
+      </section>
+    </div>
+    <div id="placeholder">
+        <section id="low-section">
+          <div id="header">Header.</div>
+        </section>
+      </div>
+  </body>
+</html>
